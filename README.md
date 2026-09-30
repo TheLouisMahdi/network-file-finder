@@ -35,6 +35,24 @@ npm run check
 
 Source code is in `src/network-file-finder.js`; the build creates the standalone `network-file-finder.js` snippet.
 
+## Contributing
+
+Bug reports and focused pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, testing, and submission guidelines.
+
+Good places to help:
+
+- Improve manifest-only HLS/DASH assembly.
+- Expand browser and website compatibility testing.
+- Improve adaptive-stream quality selection and error reporting.
+
+## Built With
+
+- [Mediabunny](https://github.com/Vanilagy/mediabunny) — media demuxing and remuxing (MPL-2.0).
+- [GoogleVideo](https://github.com/LuanRT/googlevideo) — YouTube SABR/UMP handling (MIT).
+- [YouTube.js](https://github.com/LuanRT/YouTube.js) — YouTube player and stream URL resolution (MIT).
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for versions, source links, and license notices.
+
 ## Limitations
 
 - Browser CORS rules may block some cross-origin resources.
@@ -46,4 +64,4 @@ Use this tool only for content you own or are authorized to download.
 
 ## License
 
-MIT. Bundled third-party license notices are retained in the generated snippet.
+Original project code is licensed under the [MIT License](LICENSE). The standalone bundle also contains third-party code under its respective licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

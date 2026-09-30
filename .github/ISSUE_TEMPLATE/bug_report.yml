@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible download or detection problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting a bug. Never include cookies, tokens, private URLs, or personal data.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 140 on Windows 11
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Public test URL or site
+      description: Use a public URL only. A site name is enough if the URL is private.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: Describe when the snippet was run, what media was played, and what was clicked.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+      placeholder: Include the file type, size, and error message if available.
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Relevant console output
+      description: Remove secrets and personal data before pasting logs.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I tested the latest version from the main branch.
+          required: true
+        - label: The content is not DRM-protected and I am authorized to download it.
+          required: true
+        - label: I removed cookies, tokens, private URLs, and personal data.
+          required: true
